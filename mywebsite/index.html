@@ -1,447 +1,386 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title>Code a Responsive Website with Twitter Bootstrap 3</title>
-		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
-		
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="includes/css/styles.css">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
-		
-	</head>
-	<body>
-	
-		<div class="container" id="main">
-		
-			<div class="navbar navbar-fixed-top">
-				<div class="container">
-					
-					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				
-					<a class="navbar-brand" href="/"><img src="images/logo.png" alt="DANCE"></a>
-					
-					<div class="nav-collapse collapse navbar-responsive-collapse">
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="#">Home</a>
-							</li>
-							
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
-								
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#">Web Design</a>
-									</li>
-									
-									<li>
-										<a href="#">Web Development</a>
-									</li>
-									
-									<li>
-										<a href="#">SEO</a>
-									</li>
-									
-									<li class="divider"></li>
-									
-									<li class="dropdown-header">More Services</li>
-									
-									<li>
-										<a href="#">Content Creation</a>
-									</li>
-									
-									<li>
-										<a href="#">Social Media Marketing</a>
-									</li>
-								</ul><!-- end dropdown-menu -->
-							</li>
-						</ul>
-						
-						<form class="navbar-form pull-left">
-							<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
-							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-						</form><!-- end navbar-form -->
-						
-						<ul class="nav navbar-nav pull-right">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
-								
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Settings</a>
-									</li>
-									
-									<li>
-										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
-									</li>
-									
-									<li>
-										<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
-									</li>
-									
-									<li class="divider"></li>
-									
-									<li>
-										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
-									</li>
-								</ul>
-							</li>
-						</ul><!-- end nav pull-right -->
-					</div><!-- end nav-collapse -->
-				
-				</div><!-- end container -->
-			</div><!-- end navbar -->
-			
-			
-			<div class="carousel slide" id="myCarousel">
-			
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-					<li data-slide-to="1" data-target="#myCarousel"></li>
-					<li data-slide-to="2" data-target="#myCarousel"></li>
-				</ol>
-			
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-					<div class="item active" id="slide1">
-						<div class="carousel-caption">
-							<h4>VIJAY TV PRESENTS</h4>
-							<p>Floor is yours/.....hurray!!!!!</p>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-					
-					<div class="item" id="slide2">
-						<div class="carousel-caption">
-							<h4>Kings of dance</h4>
-							<p>STUNNERS &amp; LITERACY OF PRESENCE AND PATH TO KOLLYWOOD...ONLY BY VIJAY .</p>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-					
-					<div class="item" id="slide3">
-						<div class="carousel-caption">
-							<h4>REGISTER STARTS</h4>
-							<p>GO SOON AND FLY OVER THE FLOOR....</p>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-				</div><!-- carousel-inner -->
-				
-				<!-- Controls -->
-				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-			
-			</div><!-- end myCarousel -->
-			
-			
-			<div class="row" id="bigCallout">
-				<div class="col-12">
-					
-					<div class="alert alert-success alert-block fade in" id="successAlert">
-						<button type="button" class="close" data-dismiss="alert">&times;</button>
-						
-						<h4>Success!</h4>
-						<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
-					</div><!-- end alert -->
-					
-					<!-- Visible only on small devices -->
-					<div class="well well-small visible-sm">
-						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
-					</div><!-- end well-small -->
-					
-					<div class="well">
-						<div class="page-header">
-							<h1>Welcome to KINGS OF DANCE SEASON II <small>MOVE YOUR MIND IN WAVES</small></h1>
-						</div><!-- end page-header -->
-						
-						<p class="lead">"According to physiological law", that of "plastic rhythm" (i.e. dance) "is to designate movement in space, to interpret long time-values by slow movements and short ones by quick movements, regulate pauses by their divers successions and express sound accentuations in their multiple nuances by additions of bodily weight, by means of muscular innervations".</p>
-						
-						<a href="" class="btn btn-large btn-primary" id="alertMe">Read More</a>
-						<a href="" class="btn btn-large btn-link">www.kingsofdance.com</a>
-					</div><!-- end well -->
-					
-				</div><!-- end col-12 -->
-			</div><!-- end bigCallout -->
-			
-			
-			<div class="row" id="featuresHeading">
-				<div class="col-12">
-					<h2>GALLERY</h2>
-					<p class="lead">according to our view,what special in this SEASON 1</p>
-				</div><!-- end col-12 -->
-			</div><!-- end featuresHeading -->
-			
-			
-			<div class="row" id="features">
-				<div class="col-sm-4 feature">
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title">WINNER-ABIRAM</h3>
-						</div><!-- end panel-heading -->
-						<img src="images/badge_html5.jpg" alt="winner" >
-						
-						<p>Vijay TV Kings Of Dance Semi Final Winner @Grand Final. Vijay TV Kings Of Dance : Kings of Dance, is a Tamil reality show on Star Vijay. One of the most exhilarating, captivating and stimulating dance competitions, it has choreographer Kalyan Master and actress Priyamani as judges.</p>
-						
-						<a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-warning btn-block">READ MORE</a>
-					</div><!-- end panel -->
-				</div><!-- end feature -->
-				
-				<div class="col-sm-4 feature">
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title">PRIYAMANI & KALYAN MASTER</h3>
-						</div><!-- end panel-heading -->
-						<img src="images/badge_css3.jpg" alt="JUDGES">
-						
-						<p>Kings of Dance is a popular show of Tollywood industry among dance lovers, As judges, we classified every competitor’s intensity and set the standards high at each level.All these participants are gifted talents in their own style and this finale was really hard to decide which one is the best among all the elites for both the judges and audience. All the finalists were looking forward to taking home the winning prize and a title of winning the show, ‘Kings of Dance’.</p>
-						
-						<a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-danger btn-block">WATCH NOW</a>
-					</div><!-- end panel -->
-				</div><!-- end feature -->
-				
-				<div class="col-sm-4 feature">
-					<div class="panel">
-						<div class="panel-heading">
-							<h3 class="panel-title">TALENTERS</h3>
-						</div><!-- end panel-heading -->
-						<img src="images/badge_bootstrap.jpg" alt="london dream team">
-						
-						<p>Dance studies are offered through the arts and humanities programs of many higher education institutions. Some universities offer Bachelor of Arts and higher academic degrees in Dance. A dance study curriculum may encompass a diverse range of courses and topics, including dance practice and performance, choreography, ethnochoreology, kinesiology, dance notation, and dance therapy.</p>
-						
-						<a href="http://getbootstrap.com/" target="_blank" class="btn btn-info btn-block">CONTINUE</a>
-					</div><!-- end panel -->
-				</div><!-- end feature -->
-			</div><!-- end features -->
-			
-			
-			<div class="row" id="moreInfo">
-				<div class="col-sm-6">
-					<h3>Neat Tabbable Content</h3>
-					<div class="tabbable">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane active" id="tab1">
-								<h4><span class="glyphicon glyphicon-map-marker"></span> about dance <small>More like our favourite surf spot</small></h4>
-								
-						<img src="http://placehold.it/140" class="thumbnail pull-left" alt="Placeholder image">
-								
-								<p>Rhythm and dance are deeply linked in history and practice. The American dancer Ted Shawn wrote; "The conception of rhythm which underlies all studies of the dance is something about which we could talk forever, and still not finish."[13] A musical rhythm requires two main elements; first, a regularly-repeating pulse (also called the "beat" or "tactus") that establishes the tempo and, second, a pattern of accents and rests that establishes the character of the metre or basic rhythmic pattern. The basic pulse is roughly equal in duration to a simple step or gesture..</p>
-							</div><!-- end tab-pane -->
-							
-							<div class="tab-pane" id="tab2">
-								<h4>dance and rhythm <small>combo pack</small></h4>
-								
-								<img src="http://placehold.it/140" class="thumbnail pull-left" alt="Placeholder image" class="img-circle">
-								
-								<p>Rhythm and dance are deeply linked in history and practice. The American dancer Ted Shawn wrote; "The conception of rhythm which underlies all studies of the dance is something about which we could talk forever, and still not finish."[13] A musical rhythm requires two main elements; first, a regularly-repeating pulse (also called the "beat" or "tactus") that establishes the tempo and, second, a pattern of accents and rests that establishes the character of the metre or basic rhythmic pattern. The basic pulse is roughly equal in duration to a simple step or gesture.</p>
-								
-								<p>Just as musical rhythms are defined by a pattern of strong and weak beats, so repetitive body movements often depends on alternating "strong" and "weak" muscular movements.[15] Given this alternation of left-right, of forward-backward and rise-fall, along with the bilateral symmetry of the human body, it is natural that many dances and much music are in duple and quadruple meter. However, since some such movements require more time in one phase than the other - such as the longer time required to lift a hammer than to strike - some dance rhythms fall equally naturally into triple metre.[16] Occasionally, as in the folk dances of the Balkans, dance traditions depend heavily on more complex rhythms. Further, complex dances composed of a fixed sequence of steps always require phrases and melodies of a certain fixed length to accompany that sequence.</p>
-								
-								<hr>
-								
-								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> CLICK TO SEE</a>
-								
-								<div class="modal fade" id="myModal">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button class="close" data-dismiss="modal">&times;</button>
-												
-												<h4 class="modal-title">A Modal Window</h4>
-											</div><!-- end modal-header -->
-											<div class="modal-body">
-												<h4>Text in a modal</h4>
-												
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-												
-												<h4>Popovers in a modal</h4>
-												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button</a>
-												
-												<h4>Tooltips in a modal</h4>
-												<a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
-												
-												<hr>
-												
-												<p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
-												
-												<form class="form-horizontal">
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputName">Name</label>
-														<div class="col-lg-10">
-															<input class="form-control" id="inputName" placeholder="Name" type="text">
-														</div>
-													</div>
-													
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
-														<div class="col-lg-10">
-															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
-														</div>
-													</div>
-													
-													<div class="form-group">
-														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
-														<div class="col-lg-10">
-															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-															<button class="btn btn-success pull-right" type="submit">Send!</button>
-														</div>
-													</div>
-												</form>
-											</div><!-- end modal-body -->
-											
-											<div class="modal-footer">
-												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
-											</div><!-- end modal-footer -->
-										</div><!-- end modal-content -->
-									</div><!-- end modal-dialog -->
-								</div><!-- end myModal -->
-								
-							</div><!-- end tab-pane -->
-						</div><!-- end tab-content -->
-					</div><!-- end tabbable -->
-				</div><!-- end col-sm-6 -->
-				
-				<div class="col-sm-6">
-					<h3>KNOW MORE ABOUT</h3>
-					<p>The very act of dancing, the steps themselves, generate an "initial skeleton of rhythmic beats" that must have preceded any separate musical accompaniment, while dance itself, as much as music, requires time-keeping[17] just as utilitarian repetitive movements such as walking, hauling and digging take on, as they become refined, something of the quality of dance.[15]
+<head>
+    <meta charset="utf-8">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title>Code a Responsive Website with Twitter Bootstrap 3</title>
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+    
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="contact.html" rel ="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="includes/css/styles.css">
+    
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="container" id="main">
+        
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/"><img src="images/logo.jpg" alt="DANCE" style="font-size:30px;font-color:marron;"></a>
+                
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav" id=#nav>
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        
+                        <li >
+                            <a href="#">danceclub</a>
+                        </li>
+                        <li >
+                            <a href="#">dancers</a>
+                        </li>
+                        <li >
+                            <a href="contact.html">competition</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- end navbar-form -->
+                    
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-download"></span> download registerform<strong class="caret"></strong> </a>  -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> login<strong class="caret"></strong></a>
 
-Musical accompaniment therefore arose in the earliest dance, so that ancient Egyptians attributed the origin of the dance to the divine Athotus, who was said to have observed that music accompanying religious rituals caused participants to move rhythmically and to have brought these movements into proportional measure.</p>
-					
-					<h4>A List Group</h4>
-					
-					<div class="list-group">
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">folk</h4>
-							<p class="list-group-item-text">I can not dance unless thou leadest. If thou wouldst have me spring aloft, sing thou and I will spring, into love and from love to knowledge and from knowledge to ecstasy above all human sense[19]Thoinot Arbeau's celebrated 16th century dance-treatise Orchésographie, indeed, begins with definitions of over eighty distinct drum-rhythms.[20]Helen Moller
-As has been shown above, dance has been represented through the ages as having emerged as a response to music yet, as Lincoln Kirstein implied, it is at least as likely that primitive music arose from dance. Shawn concurs, stating that dance "was the first art of the human race, .</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">western</h4>
-							<p class="list-group-item-text">Scholes, not a dancer but a musician, offers support for this view, stating that the steady measures of music, of two, three or four beats to the bar, its equal and balanced phrases, regular cadences, contrasts and repetitions, may all be attributed to the "incalculable" influence of dance upon music.[21]</p>
-						</a>
-						<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">ballet</h4>
-							<p class="list-group-item-text">primarily a musician and teacher, relates how a study of the physical movements of pianists led him "to the discovery that musical sensations of a rhythmic nature call for the muscular and nervous response of the whole organism", to develop "a special training designed to regulate nervous reactions and effect a co-ordination of muscles and nerves" and ultimately to seek the connections between "the art of music and the art of dance", which he formulated into his system of eurhythmics.[22] </p>
-						</a>
-					</div><!-- list-group -->
-					
-					
-				</div><!-- end col-sm-6 -->
-			</div><!-- end moreInfo -->
-			
-			<hr>
-			
-			<div class="row" id="moreCourses">
-				<div class="col-12">
-					<h3>SPECIAL GUEST</h3>
-					<div class="thumbnails row">
-						<div class="col-6">
-							<div class="thumbnail">
-								<img src="images/prabhu.jpg" alt="winner" >
-								
-								
-								<div class="caption">
-									<h3>DANCE  &amp; MAKE UR LEGS GO AROUND </h3>
-									
-									<p>Many purely musical pieces have been named "waltz" or "minuet", &amp;trigger yourself.</p>
-									
-									<p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">QUIZ</a> <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-small btn-link">REGISTER THE SEATS</a></p>
-								</div><!-- end caption -->
-							</div><!-- end thumbnail -->
-						</div><!-- end col-6 -->
-						
-						<div class="col-6">
-							<div class="thumbnail">
-								<img src="images/one.jpg" alt="Web Hosting 101">
-								
-								
-								
-								<div class="caption">
-									<h3>Web Hosting 101</h3>
-									
-									<p>Learn how to publish your own website live in no time with this web hosting crash course. Plus setup your first Wordpress site in 5-minutes!</p>
-									
-									<p><a href="https://www.udemy.com/web-hosting-101/" class="btn btn-primary btn-small" target="_blank">QUIZ</a> <a href="https://www.udemy.com/web-hosting-101/" target="_blank" class="btn btn-small btn-link">REGISTER</a></p>
-								</div><!-- end caption -->
-							</div><!-- end thumbnail -->
-						</div><!-- end col-6 -->
-					</div><!-- end row -->
-				</div><!-- end col-12 -->
-			</div><!-- end moreCourses -->
-		</div><!-- end container -->
-		
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-					<h6>Copyright &copy; 2016 {ragul}</h6>
-					</div><!-- end col-sm-2 -->
-					
-					<div class="col-sm-4">
-						<h6>About Us</h6>
-						<p>Shawn quotes with approval the statement of Dalcroze that, while the art of musical rhythm consists in differentiating and combining time durations, pauses and accents "according to physiological law", that of "plastic rhythm" (i.e. dance) "is to designate movement in space, to interpret long time-values by slow movements and short ones by quick movements, regulate pauses by their divers successions and express sound accentuations in their multiple nuances by additions of bodily weight, by means of muscular innervations".</p>
-					</div><!-- end col-sm-4 -->
-					
-					<div class="col-sm-2">
-						<h6>Navigation</h6>
-						<ul class="unstyled">
-							<li><a href="#">Homepage</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Links</a></li>
-							<li><a href="#">Contact us</a></li>
-						</ul>
-					</div><!-- end col-sm-2 -->
-					
-					<div class="col-sm-2">
-						<h6>Follow Us</h6>
-						<ul class="unstyled">
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Google Plus</a></li>
-						</ul>
-					</div><!-- end col-sm-2 -->
-					
-					<div class="col-sm-2">
-						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> VIJAYTV</h6>
-					</div><!-- end col-sm-2 -->
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</footer>
-	
+                            
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> upload picture</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-comment"></span> Update your comment</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-briefcase"></span> payment</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-modal-window"></span> registration form</a>
+                                </li>
+                                
+                                <li class="divider"></li>
+                                
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- end nav pull-right -->
+                </div><!-- end nav-collapse -->
+                
+            </div><!-- end container -->
+        </div><!-- end navbar -->
+        
+        
+        <div class="carousel slide" id="myCarousel">
+            
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                <li data-slide-to="1" data-target="#myCarousel"></li>
+                <li data-slide-to="2" data-target="#myCarousel"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" id="slide1">
+                    <div class="carousel-caption">
+                        <h4>VIJAY TV PRESENTS</h4>
+                        <p>Floor is yours/.....hurray!!!!!</p>
+                    </div><!-- end carousel-caption-->
+                </div><!-- end item -->
+                
+                <div class="item" id="slide2">
+                    <div class="carousel-caption">
+                        <h4>Kings of dance</h4>
+                        <p>STUNNERS &amp; LITERACY OF PRESENCE AND PATH TO KOLLYWOOD...ONLY BY VIJAY .</p>
+                    </div><!-- end carousel-caption-->
+                </div><!-- end item -->
+                
+                <div class="item" id="slide3">
+                    <div class="carousel-caption">
+                        <h4>REGISTER STARTS</h4>
+                        <p>GO SOON AND FLY OVER THE FLOOR....</p>
+                    </div><!-- end carousel-caption-->
+                </div><!-- end item -->
+            </div><!-- carousel-inner -->
+            
+            <!-- Controls -->
+            <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+            <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+            
+        </div><!-- end myCarousel -->
+        <br>
+        <div class="jumbotron">
+            
+            <!-- Visible only on small devices -->
+            <div class="well well-small visible-sm">
+                <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+            </div><!-- end well-small -->
+            
+            <div class="well">
+                <div class="page-header">
+                    <h1>Welcome to KINGS OF DANCE SEASON II <small>MOVE YOUR MIND IN WAVES</small></h1>
+                </div><!-- end page-header -->
+                
+                <p class="lead">"According to physiological law", that of "plastic rhythm" (i.e. dance) "is to designate movement in space, to interpret long time-values by slow movements and short ones by quick movements, regulate pauses by their divers successions and express sound accentuations in their multiple nuances by additions of bodily weight, by means of muscular innervations".</p>
+                
+                <a href="" class="btn btn-large btn-primary" id="alertMe">Read More</a>
+                <a href="" class="btn btn-large btn-link">www.kingsofdance.com</a>
+            </div><!-- end well -->
+        </div>
+        
+        
+        
+        
+        <div class="row" id="featuresHeading">
+            <div class="col-12">
+                <h2>GALLERY</h2>
+                <p class="lead1">according to our view,what special in this SEASON 1</p>
+            </div><!-- end col-12 -->
+        </div><!-- end featuresHeading -->
+        
+        
+        <div class="row" id="features">
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">WINNER-ABIRAM</h3>
+                    </div><!-- end panel-heading -->
+                    <img src="images/winner.jpg" alt="winner"  >
+                    
+                    <p>Vijay TV Kings Of Dance Semi Final Winner @Grand Final. Vijay TV Kings Of Dance : Kings of Dance, is a Tamil reality show on Star Vijay. One of the most exhilarating, captivating and stimulating dance competitions, it has choreographer Kalyan Master and actress Priyamani as judges.</p>
+                    
+                    <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-warning btn-block">READ MORE</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+            
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">PRIYAMANI & KALYAN MASTER</h3>
+                    </div><!-- end panel-heading -->
+                    <img src="images/kal.jpg" alt="JUDGES">
+                    
+                    <p>Kings of Dance is a popular show of Tollywood industry among dance lovers, As judges, we classified every competitor’s intensity and set the standards high at each level.All these participants are gifted talents in their own style which one is the best among all the elites </p>
+                    
+                    <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-danger btn-block">WATCH NOW</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+            
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">TALENTERS</h3>
+                    </div><!-- end panel-heading -->
+                    <img src="images/third.jpg" alt="london dream team">
+                    
+                    <p>Dance studies are offered through the arts and humanities programs of many higher education institutions. Some universities offer Bachelor of Arts A dance study curriculum may encompass a diverse range  All the finalists were looking forward to taking home the winning prize and a title of winning the show, ‘Kings of Dance’.</p>
+                    
+                    <a href="http://getbootstrap.com/" target="_blank" class="btn btn-info btn-block">CONTINUE</a>
+                </div><!-- end panel -->
+            </div><!-- end feature -->
+        </div><!-- end features -->
+        
+        
+        <div class="row" id="moreInfo">
+            <div class="col-sm-6">
+                <h3>Neat Tabbable Content</h3>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <h4>about dance <small>More like our favourite surf spot</small></h4>
+                            
+                            <img src="images/a.jpg" class="thumbnail pull-left" alt="Placeholder image">
+                            
+                            <p>Rhythm and dance are deeply linked in history and practice. The American dancer Ted Shawn wrote; "The conception of rhythm which underlies all studies of the dance is something about which we could talk forever, and still not finish."[13] A musical rhythm requires two main elements; first, a regularly-repeating pulse (also called the "beat" or "tactus") that establishes the tempo and, second, a pattern of accents and rests that establishes the character of the metre or basic rhythmic pattern. The basic pulse is roughly equal in duration to a simple step or gesture..</p>
+                        </div><!-- end tab-pane -->
+                        
+                        <div class="tab-pane" id="tab2">
+                            <h4>dance and rhythm <small>combo pack</small></h4>
+                            
+                            <img src="images/b.jpg" class="thumbnail pull-left" alt=" image" class="img-circle">
+                            
+                            <p>Rhythm and dance are deeply linked in history and practice. The American dancer Ted Shawn wrote; "The conception of rhythm which underlies all studies of the dance is something about which we could talk forever, and still not finish."[13] A musical rhythm requires two main elements; first, a regularly-repeating pulse (also called the "beat" or "tactus") that establishes the tempo and, second, a pattern of accents and rests that establishes the character of the metre or basic rhythmic pattern. The basic pulse is roughly equal in duration to a simple step or gesture.</p>
+                            
+                            <p>Just as musical rhythms are defined by a pattern of strong and weak beats, so repetitive body movements often depends on alternating "strong" and "weak" muscular movements.[15] Given this alternation of left-right, of forward-backward and rise-fall, along with the bilateral symmetry of the human body, it is natural that many dances and much music are in duple and quadruple meter. However, since some such movements require more time in one phase than the other - such as the longer time required to lift a hammer than to strike - some dance rhythms fall equally naturally into triple metre.[16] Occasionally, as in the folk dances of the Balkans, dance traditions depend heavily on more complex rhythms. Further, complex dances composed of a fixed sequence of steps always require phrases and melodies of a certain fixed length to accompany that sequence.</p>
+                            
+                            <hr>
+                            
+                            <a href="#myModal"  role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> CLICK TO SEE</a>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade" role="dialog">
+                              <div class="modal-dialog">
 
-	<!-- All Javascript at the bottom of the page for faster page loading -->
-		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
-	
-	</body>
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">DANCE AND RHYTHM</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>dance and rhythm developed first in Italy and then in France from lavish court spectacles that combined music, drama, poetry, song, costumes and dance. Members of the court nobility took part as performers. During the reign of Louis XIV, himself a dancer, dance became more codified. Professional dancers began to take the place of court amateurs, and ballet masters were licensed by the French government. The first ballet dance academy was the Académie Royale de Danse (Royal Dance Academy), opened in Paris in 1661. Shortly thereafter, the first institutionalized ballet troupe, associated with the Academy, was formed; this troupe began as an all-male ensemble but by 1681 opened to include women as well.[5]</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div><!-- end tab-pane -->
+            </div><!-- end tab-content -->
+        </div><!-- end tabbable -->
+    </div><!-- end col-sm-6 -->
+    
+    <div class="col-sm-6">
+        <h3>KNOW MORE ABOUT</h3>
+        <p>The very act of dancing, the steps themselves, generate an "initial skeleton of rhythmic beats" that must have preceded any separate musical accompaniment, while dance itself, as much as music, requires time-keeping[17] just as utilitarian repetitive movements such as walking, hauling and digging take on, as they become refined, something of the quality of dance.[15]
+
+            Musical accompaniment therefore arose in the earliest dance, so that ancient Egyptians attributed the origin of the dance to the divine Athotus, who was said to have observed that music accompanying religious rituals caused participants to move rhythmically and to have brought these movements into proportional measure.</p>
+            
+            <h4>A List Group</h4>
+            
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">folk</h4>
+                    <p class="list-group-item-text">I can not dance unless thou leadest. If thou wouldst have me spring aloft, sing thou and I will spring, into love and from love to knowledge and from knowledge to ecstasy above all human sense[19]Thoinot Arbeau's celebrated 16th century dance-treatise Orchésographie, indeed, begins with definitions of over eighty distinct drum-rhythms.[20]Helen Moller
+                        As has been shown above, dance has been represented through the ages as having emerged as a response to music yet, as Lincoln Kirstein implied, it is at least as likely that primitive music arose from dance. Shawn concurs, stating that dance "was the first art of the human race, .</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">western</h4>
+                        <p class="list-group-item-text">Scholes, not a dancer but a musician, offers support for this view, stating that the steady measures of music, of two, three or four beats to the bar, its equal and balanced phrases, regular cadences, contrasts and repetitions, may all be attributed to the "incalculable" influence of dance upon music.[21]</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">ballet</h4>
+                        <p class="list-group-item-text">primarily a musician and teacher, relates how a study of the physical movements of pianists led him "to the discovery that musical sensations of a rhythmic nature call for the muscular and nervous response of the whole organism", to develop "a special training designed to regulate nervous reactions and effect a co-ordination of muscles and nerves" and ultimately to seek the connections between "the art of music and the art of dance", which he formulated into his system of eurhythmics.[22] </p>
+                    </a>
+                </div><!-- list-group -->
+                
+                
+            </div><!-- end col-sm-6 -->
+        </div><!-- end moreInfo -->
+        
+        <hr>
+        
+        <div class="row" id="moreCourses">
+            <div class="col-12">
+                <h3>SPECIAL GUEST</h3>
+                <div class="thumbnails row">
+                    <div class="col-6">
+                        <div class="thumbnail">
+                            <img src="images/prabhu.jpg" alt="winner" >
+                            
+                            
+                            <div class="caption">
+                                <h3>DANCE  &amp; MAKE UR LEGS GO AROUND </h3>
+                                
+                                <p>Many purely musical pieces have been named "waltz" or "minuet", &amp;trigger yourself.</p>
+                                
+                                <p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">QUIZ</a> <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-small btn-link">REGISTER THE SEATS</a></p>
+                            </div><!-- end caption -->
+                        </div><!-- end thumbnail -->
+                    </div><!-- end col-6 -->
+                    
+                    <div class="col-6">
+                        <div class="thumbnail">
+                            <img src="images/one.jpg" alt="Web Hosting 101">
+                            
+                            
+                            
+                            <div class="caption">
+                                <h3>Web Hosting 101</h3>
+                                
+                                <p>Learn how to publish your own website live in no time with this web hosting crash course. Plus setup your first Wordpress site in 5-minutes!</p>
+                                
+                                <p><a href="https://www.udemy.com/web-hosting-101/" class="btn btn-primary btn-small" target="_blank">QUIZ</a> <a href="https://www.udemy.com/web-hosting-101/" target="_blank" class="btn btn-small btn-link">REGISTER</a></p>
+                            </div><!-- end caption -->
+                        </div><!-- end thumbnail -->
+                    </div><!-- end col-6 -->
+                </div><!-- end row -->
+            </div><!-- end col-12 -->
+        </div><!-- end moreCourses -->
+    </div><!-- end container -->
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h6>Copyright &copy; 2016 {ragul}</h6>
+                </div><!-- end col-sm-2 -->
+                
+                <div class="col-sm-4">
+                    <h6>About Us</h6>
+                    <p>Shawn quotes with approval the statement of Dalcroze that, while the art of musical rhythm consists in differentiating and combining time durations, pauses and accents "according to physiological law", that of "plastic rhythm" (i.e. dance) "is to designate movement in space, to interpret long time-values by slow movements and short ones by quick movements, regulate pauses by their divers successions and express sound accentuations in their multiple nuances by additions of bodily weight, by means of muscular innervations".</p>
+                </div><!-- end col-sm-4 -->
+                
+                <div class="col-sm-2">
+                    <h6>Navigation</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div><!-- end col-sm-2 -->
+                
+                <div class="col-sm-2">
+                    <h6>Follow Us</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Google Plus</a></li>
+                    </ul>
+                </div><!-- end col-sm-2 -->
+                
+                <div class="col-sm-2">
+                    <h6>Coded with <span class="glyphicon glyphicon-heart"></span> VIJAYTV</h6>
+                </div><!-- end col-sm-2 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer>
+    
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+    
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+    
+</body>
 </html>
 
